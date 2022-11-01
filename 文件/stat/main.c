@@ -14,7 +14,7 @@
 //            gid_t  st_gid;    文件拥有者的 组 ID
 //            off_t  st_size;   普通文件的字节大小
 //            struct timespec st_atime; 最近访问的时间
-//            struct timespec st_ctime; 最近文件状态改变的时间
+//            struct timespec st_ctime; 最近文件i-node状态改变的时间
 //            struct timespec st_mtime; 最近修改的时间
 //            blksize_t st_blksize;  对文件IO时，最佳缓存大小
 //            blkcnt_t st_blocks;  文件占据多少512字节的块
