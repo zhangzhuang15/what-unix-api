@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+#include <sys/wait.h>
 
 /* 展示IPC中有名管道的使用方式**/
 
@@ -19,7 +20,7 @@ int main() {
     }
     else if (child_A == 0) {
         int fd = open("fifo", O_WRONLY);
-        strcpy(buf, "hello child B");
+        strcpy(buf, "hello child B", 14);
         write(fd, buf, sizeof(buf) );
         printf("child A write finish\n");
         close(fd);
@@ -34,5 +35,6 @@ int main() {
             printf("child B read from child A : %s\n", buf);
             close(fd);
         }
+        
     }
 }
