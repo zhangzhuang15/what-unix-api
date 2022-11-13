@@ -1,6 +1,9 @@
 // #include <sys/wait.h>
 // pid_t waitpid(pid_t pid, int* statloc, int option)
 // 等待一个子进程终止
+// 当子进程终止时，内核会发送SIGCHLD信号给当前进程， waitpid 函数就是用来接受
+// 该信号，捕捉子进程的终止码和pid， 其内部实现可能使用了 sigaction 函数，这个
+// 函数提供了信号回掉函数，函数参数包含了终止码、进程ID在内的更多信息。
 //
 // pid- 子进程ID
 //      pid == -1 等待任意子进程
