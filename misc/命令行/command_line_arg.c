@@ -1,3 +1,4 @@
+// 使用 main 参数 char* argv[] 获取command line 数据
 #include <stdio.h>
 #include <string.h>
 

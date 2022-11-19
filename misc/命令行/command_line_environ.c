@@ -1,3 +1,5 @@
+// 使用全局变量 char** environ,
+// 在 C 程序中获取系统自带和用户自定义的环境变量！
 #include <stdio.h>
 
 extern char** environ;

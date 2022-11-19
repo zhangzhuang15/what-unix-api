@@ -1,11 +1,11 @@
 // #include <unistd.h>
 // int execvp(const char* filename, char* const argv[])
-// 执行一个程序
+// 执行一个可执行程序
 //
 // filename - 可执行文件名，比如 `node`
 // argv - 命令行参数数组， 注意数组最后一个元素是 NULL 或者 (char*)0
 //
-// 失败返回 -1； 成功不返回
+// 成功，不返回；失败，返回-1
 //
 // execvp 的  v  -  vector， 对应 argv[]
 //            p  -  表示会用环境变量PATH，检索文件名，确定文件路径

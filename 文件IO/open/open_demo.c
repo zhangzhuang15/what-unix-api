@@ -1,5 +1,5 @@
 // #include <fcntl.h>
-// int open(const char* pathname, int flags, mode_t mode)
+// int open(const char* pathname, int flags, /* mode_t mode */)
 // 创建/打开 一个文件描述符
 //
 //  pathname-文件路径名
@@ -15,7 +15,7 @@
 //           不是文件夹时报错   O_DIRECTORY
 //           打开符号链接报错   O_NOFOLLOW
 //
-//  mode-文件的访问权限。
+//  mode  - 可选参数，文件的访问权限。
 //           用户可读         S_IRUSR 
 //           用户可写         S_IWUSR
 //           用户可执行       S_IXUSR

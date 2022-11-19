@@ -1,6 +1,6 @@
 // #include <unistd.h>
 // int execlp(const char *filename, const char *arg0, ..., (char*) 0)
-// 执行一个程序
+// 执行一个可执行程序
 //
 // filename-可执行文件名或者路径
 //        如果是文件名，则会到PATH中寻找
@@ -9,8 +9,7 @@
 //         因为使用 va_list解析变长参数，所以要有个标志参数结尾;
 //         把 （char *）0 改成 NULL 也是可以的
 //
-// 成功，不返回值
-// 失败，返回-1
+// 成功，不返回；失败，返回-1
 
 #include <unistd.h>
 #include <stdio.h>

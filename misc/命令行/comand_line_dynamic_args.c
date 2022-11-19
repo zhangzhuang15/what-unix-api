@@ -1,3 +1,5 @@
+// 使用 <stdarg.h> 获取函数的不定长参数！
+
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
