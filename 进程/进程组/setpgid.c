@@ -35,12 +35,12 @@ int main() {
      printf("child PID: %d\n", child);
      printf("主进程PID： %d\n", getpid());
      printf("主进程进程组ID: %d\n", getpgrp());
-     sleep(2);
+     sleep(3);
      setpgid(child, child);
      wait(NULL);
    } else {
     printf("子进程组ID 1: %d\n", getpgrp());
-    sleep(10);
+    sleep(20);
     printf("子进程组ID 2:  %d\n", getpgrp());
     exit(0);
    }
