@@ -1,0 +1,25 @@
+你将用到的POSIX API：
+* [pthread_create](../线程/pthread_demo.c)
+  > 创建线程
+* [pthread_exit](../线程/pthread_demo.c)
+  > 结束线程
+* [pthread_cond_init](../线程同步/条件变量/cond_demo.c)
+  > 创建条件变量
+* [pthread_mutex_init](../线程同步/2-互斥锁/mutex_demo.c)
+  > 创建互斥锁
+* [pthread_cond_destroy](../线程同步/条件变量/cond_demo.c)
+  > 销毁条件变量
+* [pthread_mutex_destroy](../线程同步/2-互斥锁/mutex_demo.c)
+  > 销毁互斥锁
+* [phtread_cond_signal](../线程同步/条件变量/cond_demo.c)
+  > 由条件变量结束线程的阻塞
+* [pthread_cond_wait](../线程同步/条件变量/cond_demo.c)
+  > 由条件变量引发线程的阻塞
+* [pthread_mutex_lock](../线程同步/2-互斥锁/mutex_demo.c)
+  > 互斥锁上锁
+* [pthread_mutex_unlock](../线程同步/2-互斥锁/mutex_demo.c)
+  > 互斥锁解锁
+* [pthread_self](../线程/pthread_demo.c)
+  > 获取当前线程ID号
+* [pthread_join](../线程/pthread_demo.c)
+  > 等待一个线程结束
